@@ -1,6 +1,6 @@
 # Ganesh's Personal Portfolio 🚀
 
-![Portfolio Screenshot](./PROJECT-%201%20PHOTO.png)
+
 
 Welcome to the repository for my personal portfolio website! This project is a responsive and interactive digital resume built from the ground up to showcase my skills, projects, and professional journey as a Fresher Frontend Developer.
 
