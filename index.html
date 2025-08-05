@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh | Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d6efd'/><text x='50' y='72' font-size='70' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+   <link rel="stylesheet" href="./index.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Left side - Logo -->
+            <a class="navbar-brand logo" href="#">Ganesh</a>
+            
+            <!-- Hamburger toggler always visible on mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Offcanvas menu for mobile -->
+            <div class="offcanvas offcanvas-lg offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown ms-lg-2 mt-3 mt-lg-0 d-grid d-lg-block">
+                        <button id="theme-switcher-btn" class="btn dropdown-toggle btn-gradient" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-laptop"></i> Theme
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end theme-dropdown">
+                            <li><button class="dropdown-item theme-item active" data-theme="light"><i class="bi bi-sun"></i> Light</button></li>
+                            <li><button class="dropdown-item theme-item" data-theme="dark"><i class="bi bi-moon"></i> Dark</button></li>
+                            <li><button class="dropdown-item theme-item" data-theme="system"><i class="bi bi-laptop"></i> System</button></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home" data-aos="fade-in">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 fw-bold mb-3">Hi, I'm <span class="text-primary">Ganesh</span></h1>
+                    <h4 class="mb-3 fw-bold">I'm a <span class="typing-text typing-gradient" id="typing-text"></span></h4>
+                    <p class="lead mb-4">From vision to launch, I lead web projects that blend creativity with engineering excellence. Let’s collaborate to turn your boldest ideas into high-impact digital realities.</p>
+                    <div class="d-grid d-sm-flex gap-3 hero-buttons justify-content-center justify-content-lg-start">
+                        <a href="#about" class="btn btn-primary btn-lg px-4 py-3">Profile Summary</a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg px-4 py-3">Let's Connect!</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 text-center mt-5 mt-lg-0">
+                    <img src="./Ganesh_hero_image.jpg" alt="Ganesh" class="hero-img mx-auto">
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down-indicator position-absolute start-50 translate-middle-x text-decoration-none d-flex flex-column align-items-center gap-2">
+            <div class="mouse-icon rounded-pill"></div>
+            <span class="scroll-text small">Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5 bg-light" id="about">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-down">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <img src="./Ganesh_github.jpg" alt="About Ganesh" class="img-fluid about-img">
+                </div>
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="mb-4">Who Am I?</h3>
+                    <p class="lead">I am a passionate Frontend Developer with a strong foundation in web technologies. As a fresher , I specialize in creating responsive, accessible, and performance-optimized web applications.</p>
+                    <p>My journey in web development started with a curiosity about how websites work, which led me to pursue a degree in 'BSc-ITM'. Since then, I've worked on various projects, continuously improving my skills and staying updated with the latest industry trends.</p>
+                    <p>When I'm not coding, I explore cutting-edge AI tools and industry innovations to stay ahead of the tech curve, I prioritize fitness and physical training or enjoy listening to music & podcasts.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Mobile-first, user-focused development</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> UI/UX Principles</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Cross-Browser Compatibility</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Intuitive, clean interface design</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Code with vibe — where design meets emotion</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Always learning. Always improving</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="./Ganesh_Developer_Resume.pdf" id="downloadResumeBtn" class="btn btn-lg btn-gradient" download="Ganesh_Developer_Resume.pdf"><i class="bi bi-download me-2"></i> Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-5 education-section-bg" id="education" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <div class="container">
+            <h2 class="text-center mb-5">Education</h2>
+            <div id="educationCarousel" class="carousel slide education-slider" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="education-card">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <i class="bi bi-mortarboard-fill fs-1 text-primary me-3"></i>
+                                        <div>
+                                            <h3 class="mb-0">B.Sc Graduation</h3>
+                                            <h4 class="text-muted">Bhadrak Autonomous College</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4">Completed Graduation in 'BSc-ITM' with a strong foundation in computer science, focusing on Python programming, web technologies and core computer science concepts.</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> CGPA: 8.01/10.0</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Curriculum: Council of Higher Secondary Education (CHSE).</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Developed a keen interest in building practical software solutions.</li>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="education-card">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <i class="bi bi-book-fill fs-1 text-primary me-3"></i>
+                                        <div>
+                                            <h3 class="mb-0">Intermediate</h3>
+                                            <h4 class="text-muted">Charampa Mahavidyalaya College</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4">Completed Higher Secondary Education under the CHSE curriculum with a focus on Science and Mathematics, specializing in PCMB (Physics, Chemistry, Mathematics & Biology).</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Percentage: 60%</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Curriculum: Council of Higher Secondary Education (CHSE)</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Subjects: Physics, Chemistry, Mathematics & Biology.</li>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="education-card">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <i class="bi bi-award-fill fs-1 text-primary me-3"></i>
+                                        <div>
+                                            <h3 class="mb-0">Matriculation</h3>
+                                            <h4 class="text-muted">Carmel School</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4">Completed Secondary Education under the ICSE curriculum, establishing a strong academic foundation across core subjects.</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Percentage: 77%</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Curriculum: Indian Certificate of Secondary Education (ICSE)</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Strong academic performance in Computer Applications and Science</li>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#educationCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#educationCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5 skills-bg" id="skills" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <div class="container">
+            <h2 class="text-center mb-5">My Skills</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Technical Skills Card -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-code-slash fs-1 text-primary"></i>
+                            <h3 class="mt-2">Technical Skills</h3>
+                        </div>
+                        <div class="tools-grid mt-4">
+                            <div class="tool-item" title="HTML5">
+                                <i class="devicon-html5-plain"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tool-item" title="CSS3">
+                                <i class="devicon-css3-plain"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tool-item" title="JavaScript">
+                                <i class="devicon-javascript-plain"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tool-item" title="Python">
+                                <i class="devicon-python-plain"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tool-item" title="Bootstrap">
+                                <i class="devicon-bootstrap-plain"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools & Platforms Card -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-tools fs-1 text-primary"></i>
+                            <h3 class="mt-2">Tools & Platforms</h3>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mt-4">Tools of AI</h5>
+                            <ul class="list-unstyled soft-skills-list">
+                                <li class="mb-2"><i class="bi bi-stars text-primary me-2"></i> Gemini</li>
+                                <li class="mb-2"><i class="bi bi-google text-primary me-2"></i> Google AI Studio</li>
+                                <li class="mb-2"><i class="bi bi-search text-primary me-2"></i> Perplexity</li>
+                                <li class="mb-2"><i class="bi bi-robot text-primary me-2"></i> Gwen AI</li>
+                            </ul>
+
+                            <h5 class="fw-bold mt-4">Platforms</h5>
+                            <ul class="list-unstyled soft-skills-list">
+                                <li class="mb-2"><i class="bi bi-github text-primary me-2"></i> Github</li>
+                                <li class="mb-2"><i class="bi bi-cloud-upload text-primary me-2"></i> Netlify</li>
+                            </ul>
+
+                            <h5 class="fw-bold mt-4">Code Editor</h5>
+                            <ul class="list-unstyled soft-skills-list">
+                                <li class="mb-2"><i class="bi bi-code-slash text-primary me-2"></i> Visual Studio Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft Skills Card -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-card">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-person-check-fill fs-1 text-primary"></i>
+                            <h3 class="mt-2">Soft Skills</h3>
+                        </div>
+                        <ul class="list-unstyled soft-skills-list">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Problem Solving</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Team Collaboration</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Effective Communication</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Adaptability</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Attention to Detail</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5 projects-bg" id="projects">
+        <div class="container">
+            <h2 class="text-center mb-5 text-white" data-aos="fade-down">My Projects</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Project: Personal Portfolio -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card project-card h-100 d-flex flex-column">
+                        <img src="./PROJECT- 1 PHOTO.png" class="card-img-top" alt="Personal Portfolio Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Personal Portfolio Website</h5>
+                            <p class="card-text text-muted flex-grow-1">A responsive and modern personal portfolio built from scratch to showcase my skills, projects, and professional journey.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary fw-normal">HTML5</span>
+                                <span class="badge bg-danger text-light fw-normal">CSS3</span>
+                                <span class="badge bg-warning text-dark fw-normal">JavaScript</span>
+                                <span class="badge bg-dark fw-normal">Bootstrap 5</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="./index.html" class="btn btn-sm btn-primary" target="_blank">View Live</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary" title="View Code on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 1: Text-To-Speech -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card project-card h-100 d-flex flex-column">
+                        <img src="./project-2 img.png" class="card-img-top" alt="Text-To-Speech Converter Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Text-To-Speech Converter</h5>
+                            <p class="card-text text-muted flex-grow-1">A modern TTS converter with theme toggling, speed/volume controls, and a dynamic particle background.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary fw-normal">HTML5</span>
+                                <span class="badge bg-info text-dark fw-normal">CSS3</span>
+                                <span class="badge bg-warning text-dark fw-normal">JavaScript</span>
+                                <span class="badge bg-success fw-normal">Web Speech API</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="./Text-To-Speech.html" class="btn btn-sm btn-primary" target="_blank">View Live</a>
+                                <a href="https://github.com/Ganeshpanda34/Text-To-Speech-Converter.git" class="btn btn-sm btn-outline-secondary" title="View Code on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: GymGenius AI -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card project-card h-100 d-flex flex-column">
+                        <img src="./project-3 img.png" class="card-img-top" alt="GymGenius AI Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">GymGenius AI Chatbot</h5>
+                            <p class="card-text text-muted flex-grow-1">An AI-powered gym coach chatbot that provides workout routines and form tips in a sleek, glassmorphism-style interface.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary   fw-normal">HTML5</span>
+                                <span class="badge bg-danger text-light  fw-normal">CSS3</span>
+                                <span class="badge bg-warning text-dark  fw-normal">JavaScript</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="./GYM-BOT AI.html" class="btn btn-sm btn-primary" target="_blank">View Live</a>
+                                <a href="https://github.com/Ganeshpanda34/Genius-GYM-AI.git" class="btn btn-sm btn-outline-secondary" title="View Code on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Tic-Tac-Toe -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card project-card h-100 d-flex flex-column">
+                        <img src="./GAME.png" class="card-img-top" alt="Tic-Tac-Toe Game Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Modern Tic-Tac-Toe</h5>
+                            <p class="card-text text-muted flex-grow-1">A classic Tic-Tac-Toe game with a clean, modern design, sound effects, and a restart feature.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary  fw-normal ">HTML5</span>
+                                <span class="badge bg-danger text-light fw-normal ">CSS3</span>
+                                <span class="badge bg-warning text-dark fw-normal ">JavaScript</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="./Tic -Tac-Toe Game.html" class="btn btn-sm btn-primary" target="_blank">View Live</a>
+                                <a href="https://github.com/Ganeshpanda34/TIC---TAC---TOE---GAME.git" class="btn btn-sm btn-outline-secondary" title="View Code on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-5">
+                    <h4 class="mb-4">Get in Touch</h4>
+                    <div class="contact-info-item">
+                        <i class="bi bi-geo-alt-fill contact-info-icon"></i>
+                        <div>
+                            <h5>Location</h5>
+        <a href="https://www.google.com/maps/place/Buddha+Vihar,+Bhadrak,+Odisha+756100/@21.0559444,86.4974137,17z/data=!4m6!3m5!1s0x3a1c0a012a5465d5:0xc9846b62997a2721!8m2!3d21.0593972!4d86.5034447!16s%2Fg%2F1ptx1mz33!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="text-decoration: none;">Bhadrak, Odisha, India</a>
+
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="bi bi-envelope-fill contact-info-icon"></i>
+                        <div>
+                            <h5>Email</h5>
+                     <a href="mailto:roy862452@gmail.com" style="text-decoration: none;">roy862452@gmail.com </a>
+
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="bi bi-telephone-fill contact-info-icon"></i>
+                        <div>
+                            <h5>Phone</h5>
+                        <a href="tel:+91 8249873663" style="text-decoration: none;">+91 8249873663</a>
+
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Follow Me</h5>
+                        <div class="d-flex flex-wrap">
+                            <a href="https://github.com/GaneshPanda34" target="_blank" class="text-body-secondary text-decoration-none fs-4 mx-2"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/dev-roy-81319a378" target="_blank" class="text-body-secondary text-decoration-none fs-4 mx-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://twitter.com/@GaneshPanda34" target="_blank" class="text-body-secondary text-decoration-none fs-4 mx-2"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://www.instagram.com/ganesh_panda69" target="_blank" class="text-body-secondary text-decoration-none fs-4 mx-2"><i class="bi bi-instagram"></i></a>
+                            <a href="https://wa.me/8249873663" target="_blank" class="text-body-secondary text-decoration-none fs-4 mx-2"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <form id="contact-form" method="POST">
+                        <!-- IMPORTANT: Replace with your own Access Key from web3forms.com -->
+                        <input type="hidden" name="access_key" value="de117e27-5032-423e-849e-d50b911a7af2">
+                        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+                        <input type="hidden" name="from_name" value="Ganesh's Portfolio">
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="e.g. John Doe" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="e.g. john.doe@example.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="form_subject" placeholder="e.g. Project Inquiry" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Hello, I'd like to discuss..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-lg px-4 btn-gradient">Send Message</button>
+                            </div>
+                        </div>
+                        <div id="form-result" class="mt-3"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white position-relative">
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo mb-3">Ganesh Prasad Panda</div>
+                    <p>I don't build websites – I craft magnetic digital experiences that pull users in and don't let go. Let's create something unforgettable⚡</p>
+                    <div class="d-flex flex-wrap">
+                        <a href="https://github.com/GaneshPanda34" target="_blank" class="text-white me-3"><i class="bi bi-github fs-4"></i></a>
+                        <a href="https://www.linkedin.com/in/dev-roy-81319a378" target="_blank" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="https://twitter.com/@GaneshPanda34" target="_blank" class="text-white me-3"><i class="bi bi-twitter-x fs-4"></i></a>
+                        <a href="https://www.instagram.com/ganesh_panda69" target="_blank" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#education" class="text-white text-decoration-none">Education</a></li>
+                        <li class="mb-2"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+                        <li class="mb-2"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="mb-4">Services</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">Web Development</li>
+                    <li class="mb-2">UI/UX Design</li>
+                    <li class="mb-2">Responsive Design with Mobile-first approach</li>
+                    <li>Vibe Coding</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 <span class="text-primary">Ganesh</span>. All rights reserved.</p>
+                </div>
+               
+            </div>
+        </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top btn-gradient"><i class="bi bi-arrow-up"></i></a>
+
+<!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="./index.js"></script>
+</body>
+</html>
