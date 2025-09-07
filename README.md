@@ -1,6 +1,6 @@
 # Ganesh's Personal Portfolio 🚀
 
-
+![Portfolio Screenshot](./PROJECT-%201%20PHOTO.png)
 
 Welcome to the repository for my personal portfolio website! This project is a responsive and interactive digital resume built from the ground up to showcase my skills, projects, and professional journey as a Fresher Frontend Developer.
 
@@ -65,7 +65,8 @@ This portfolio page showcases several of my key projects. You can find live demo
 -   **Text-To-Speech Converter**: A modern text-to-speech application featuring theme toggling, speed/volume controls, and a dynamic particle background.
 -   **GymGenius AI Chatbot**: An AI-powered gym coach that provides workout routines and form tips through a sleek, glassmorphism-style chat interface.
 -   **Modern Tic-Tac-Toe**: A classic game reimagined with a clean, modern design, sound effects, and a restart feature.
-
+-   **Ganesh | Air draw**: A web application where you can draw by showing your hand in a pinch gesture and save it as a PNG.
+-   **Ganesh - AI Chatbot**: A sleek, responsive chat assistant using Gemini 1.5 Flash API and hosted via Streamlit.
 ---
 
 ## 🤝 Let's Connect!
